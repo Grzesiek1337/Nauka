@@ -1,18 +1,30 @@
 package com.grzes;
+
+import java.util.Scanner;
+
 public class Main {
 
 
     public static void main(String[] args) {
-        for (int i = 1; i <= 100; i++) {
-            if(i % 15 ==0) {
-                System.out.println("FizzBuzz");
-    } else if (i % 3 ==0) {
-                System.out.println("Fizz");
-            } else if (i % 5 == 0) {
-                System.out.println("Buzz");}
-            else {
-                System.out.println(i);
-                System.out.println("Extra !");
-                System.out.println("Chyba powoli zaczynam kumać");
-}}}}
+
+        String klocek = "[  ]";
+            Scanner sc = new Scanner(System.in);
+            System.out.print("Podaj ilosc poziomow piramidy: ");
+            int poziomy = sc.nextInt();
+
+            for (int i = 0; i < poziomy; i++) {
+                for (int j = 0; j < poziomy + 3 ; j++) {
+                    if (j < (poziomy - i) || j > (poziomy + i)) {
+                        System.out.print(" ");
+                    } else {
+                        System.out.print(klocek);
+                    }
+                }
+                System.out.println();
+            }
+        }
+    }
+
+
+
 

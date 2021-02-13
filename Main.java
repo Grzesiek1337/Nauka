@@ -13,5 +13,6 @@ public class Main {
             else {
                 System.out.println(i);
                 System.out.println("Extra !");
+                System.out.println("Chyba powoli zaczynam kumać");
 }}}}
 

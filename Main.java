@@ -22,8 +22,6 @@ public class Main {
             }
             System.out.println();
         }
-        System.out.println("Nie siema nie żegam się.");
-        System.out.println("A może jednak...");
-        System.out.println("PJOTER ZOBACZ I KOLEJNY RAZ EDYTUJĘ");
+
     }
 }
